@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:vlogpost1/main.dart';
+import 'package:vlogpost1/screen/calculator.dart';
 import 'package:vlogpost1/screen/grouplist.dart';
 import 'package:vlogpost1/screen/html_screen.dart';
 import 'package:vlogpost1/screen/pdfscreen.dart';
@@ -85,6 +86,19 @@ class _HomeScreenState extends State<HomeScreen> {
                     MaterialPageRoute(builder: (_) => const PdfScreen()));
               },
               child: const Text('Pdf Screen'),
+            ),
+          ),
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 15),
+            width: double.infinity,
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (_) => const CalculatorScreen()));
+              },
+              child: const Text('Calculator'),
             ),
           ),
         ],
