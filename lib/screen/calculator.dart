@@ -100,7 +100,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
 
   void btnClicked(String btnText) {
     if (btnText == "C") {
-      result = "";
+      result = "0";
       userInput = "";
       first = 0;
       second = 0;
